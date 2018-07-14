@@ -89,3 +89,8 @@ Language=English
 The distribution installation has become corrupted.
 Please select Reset from App Settings or uninstall and reinstall the app.
 .
+
+MessageId=1014 SymbolicName=MSG_SET_ROOT_PASSWORD
+Language=English
+Please create a password for the root account.
+.

@@ -38,6 +38,9 @@ HRESULT InstallDistribution(bool createUser)
 
     // Create a user account.
     if (createUser) {
+		// The root account will be inaccessible if it doesn't have a password.
+		Helpers::PrintMessage(MSG_SET_ROOT_PASSWORD);
+		hr = g_wslApi.WslLaunchInteractive(L"/usr/bin/passwd", true, &exitCode);
         Helpers::PrintMessage(MSG_CREATE_USER_PROMPT);
         std::wstring userName;
         do {

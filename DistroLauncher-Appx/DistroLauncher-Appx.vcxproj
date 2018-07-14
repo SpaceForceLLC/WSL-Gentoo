@@ -10,7 +10,7 @@
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformMinVersion>10.0.16215.0</WindowsTargetPlatformMinVersion>
     <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
-    <TargetName>mydistro</TargetName>
+    <TargetName>gentoo</TargetName>
     <ProjectName>DistroLauncher-Appx</ProjectName>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
   </PropertyGroup>
@@ -78,6 +78,7 @@
     <PackageCertificateKeyFile>DistroLauncher-Appx_TemporaryKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <AppxBundle>Never</AppxBundle>
+    <PackageCertificateThumbprint>E52F19050CDB9B270EEA5E0352033FE9964AC9E7</PackageCertificateThumbprint>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
@@ -86,7 +87,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <AppxManifest Include="MyDistro.appxmanifest">
+    <AppxManifest Include="Gentoo.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="DistroLauncher-Appx_TemporaryKey.pfx" />
