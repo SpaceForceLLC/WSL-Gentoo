@@ -19,7 +19,6 @@ The Windows Subsystem for Linux is not enabled by default, and is required to ru
     1. Select the Packaging tab
     1. Select "Choose Certificate"
     1. Click the Configure Certificate drop down and select Create test certificate.
-    1. (TODO: instructions for installing certificate)
 1. Set up the stage3 tarball:
     1. Go to your favorite Gentoo mirror and get the latest stage3-amd64-nomultilib tarball (WSL doesn't support 32-bit binaries, so a multilib profile is likely to cause problems)
     1. Extract the .xz file and recompress it as a .gz file, using 7-zip or the software of your choice
