@@ -9,13 +9,14 @@ This project can be built using Visual Studio Community 2017. The "Universal Win
 * Windows 10 SDK (10.0.16299.0) for UWP: C#, VB, JS
 
 ## Requirements for installing and running 
-The system must be in Developer mode (found in Settings, under Update & Security, For developers)
+The system must be in Developer mode (found in Settings -> Update & Security -> For developers)
 
 The Windows Subsystem for Linux is not enabled by default, and is required to run the app. You can add the feature to your Windows installation by running `C:\Windows\System32\OptionalFeatures.exe` and selecting it from the list.
 
 ## Building
+1. Open Gentoo.sln in Visual Studio.
 1. Generate a test certificate:
-    1. In Visual Studio, open `DistroLauncher-Appx/Gentoo.appxmanifest`
+    1. In the Solution Explorer, open `Gentoo-Appx\Gentoo.appxmanifest`
     1. Select the Packaging tab
     1. Select "Choose Certificate"
     1. Click the Configure Certificate drop down and select Create test certificate.
