@@ -1,6 +1,19 @@
 # Gentoo package for Windows Subsystem for Linux
 ## Introduction 
 This is a slightly modified version of the reference WSL package found at [Microsoft/WSL-DistroLauncher](https://github.com/Microsoft/WSL-DistroLauncher), customized for Gentoo.
+
+This is intended for people who are already at least somewhat experienced with Gentoo.
+  
+## WSL Limitations
+Filesystem access is slow. This has a significant impact on the amount of time it takes to emerge anything.
+
+32-bit programs will not run, so multilib profiles cannot be used.
+
+GUIs are officially unsupported under WSL. VNC and X over TCP seem to work fine in practice, but your mileage may vary.
+
+WSL provides its own init. It sets up a reasonable environment for a user session, but it won't start any services.
+
+At least for now, systemd doesn't work at all.
   
 ## Requirements for building
 This project can be built using Visual Studio Community 2017. The "Universal Windows Platform development" feature is required, along with the following subfeatures:
@@ -12,6 +25,8 @@ This project can be built using Visual Studio Community 2017. The "Universal Win
 The system must be in Developer mode (found in Settings -> Update & Security -> For developers)
 
 The Windows Subsystem for Linux is not enabled by default, and is required to run the app. You can add the feature to your Windows installation by running `C:\Windows\System32\OptionalFeatures.exe` and selecting it from the list.
+
+Windows 10 version 1803 (the April 2018 update) or later is strongly recommended.
 
 ## Building
 1. Open Gentoo.sln in Visual Studio.
