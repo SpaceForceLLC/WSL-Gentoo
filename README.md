@@ -11,7 +11,7 @@ Filesystem access is slow. This has a significant impact on the amount of time i
 
 GUIs are officially unsupported under WSL. VNC and X over TCP seem to work fine in practice, but your mileage may vary.
 
-WSL provides its own init. It sets up a reasonable environment for a user session, but it won't start any services.
+WSL provides its own init. It sets up a reasonable environment for a user session, but it won't automatically start any services.
 
 At least for now, systemd doesn't work at all.
   
